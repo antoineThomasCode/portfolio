@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"
-import { MdBolt} from 'react-icons/md';
+
 
 //style
 import '../scss/components/Header.scss' 

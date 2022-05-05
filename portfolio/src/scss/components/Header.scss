@@ -4,7 +4,7 @@ header {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 30px;
+    padding: 10px 30px;
     align-items: center;
     font-family: 'Roboto', sans-serif;
 
@@ -34,7 +34,7 @@ header {
             &:hover {
                 transform: scale(1.1);
                 font-weight: 300;
-                text-shadow: 20px 21px 30px rgba(218, 196, 0, 0.993);
+                text-shadow: 20px 21px 30px rgba(240, 128, 128, 0.637);;
      
             }
         }
