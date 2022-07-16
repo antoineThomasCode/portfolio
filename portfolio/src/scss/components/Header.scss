@@ -1,41 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
-
 header {
     display: flex;
-    width: 100%;
     justify-content: space-between;
-    padding: 10px 30px;
+    flex-wrap: wrap;
+    flex-basis: 100%;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
-
-    div:first-child {
-        font-size: 2em;
-        font-weight: 200;
-        color: rgba(12, 11, 11, 0.945);
-        .bolt {
-            position: relative;
-            top: 5px;
-            color: rgba(255, 230, 0, 0.74);
-        }
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    column-gap: 100px;
+    animation: slide-top 0.4s ease-in-out 0.2s both;
+    > a > img {
+        height: 150px;
+        object-fit: cover;
+        object-position: center center;
     }
     nav {
         display: flex;
-        width: 40%;
+        flex-basis: 50%;
+        column-gap: 20px;
         justify-content: space-between;
-        a {
+        a { 
+            display: flex;
+            align-items: center;
             text-decoration: none;
-            text-transform: uppercase;
             color: black;
-            font-size:  1.5em;
-
-            font-weight: 100;
-            transition: 1.4s transform;
-            text-shadow: 30px -11px -30px rgba(7,22,144,0.1);
-            &:hover {
-                transform: scale(1.1);
-                font-weight: 300;
-                text-shadow: 20px 21px 30px rgba(240, 128, 128, 0.637);;
-     
+            font-size: 1.1em;
+            font-weight: 600;
+            svg {
+                margin-right: 20px;
+                color: #04d28394;
+                font-size: 20px;
             }
         }
     }

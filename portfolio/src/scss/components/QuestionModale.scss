@@ -1,0 +1,47 @@
+.question-modale {
+    border: solid 3px #04d28394;
+    border-radius: 10px;
+    color: white;
+    max-width: 450px;
+    margin: 0 auto;
+    animation: modal-question 0.5s ease-in-out 0s both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: -1px 3px 17px 12px rgba(110, 110, 110, 0.082);
+    align-items: center;
+    column-gap: 30px;
+    .react-typewriter-text-wrap {
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        justify-content: center;
+        h1 {
+            color: black;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1.2em;
+            flex-basis: 100%;
+            text-align: center;
+        }
+    }
+    button {
+        animation: slide-bottom 0.7s ease-in-out 2s both ;
+        color: #04d283e0;
+        cursor: pointer;
+        border: solid 3px #04d283e8 ;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        transition: background-color 0.7s;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        box-shadow: -1px 3px 17px 12px rgba(110, 110, 110, 0.082);
+        &:hover {
+            border: solid 3px white;
+            color: white;
+            background-color: #04d283e3;
+        }
+    }
+}

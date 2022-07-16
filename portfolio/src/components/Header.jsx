@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"
-
-
+import { FaRegIdCard, FaRegIdBadge, FaLayerGroup, FaEnvelope } from "react-icons/fa";
+import logo from "../assets/images/logo-Antoine.gif"
 //style
 import '../scss/components/Header.scss' 
 
@@ -9,12 +9,12 @@ function Header () {
 
     return (
         <header>
-            <div className="at">AntoineThomas  ///  Front-End Developpeur</div>
+            <Link to="/"><img src={logo} alt="logo Antoine Thomas" /></Link>
             <nav>
-                <Link to='/'>About</Link>
-                <Link to='/works'>Works</Link>
-                <Link to='/resume'>Resume</Link>
-                <Link to='/contact'>Contact me</Link>
+                <Link to='/'><FaRegIdBadge /> About</Link>
+                <Link to='/works'><FaLayerGroup /> Works</Link>
+                <Link to='/resume'><FaRegIdCard /> Resume</Link>
+                <Link to='/contact'><FaEnvelope /> Contact me</Link>
             </nav>
         </header>
     )
