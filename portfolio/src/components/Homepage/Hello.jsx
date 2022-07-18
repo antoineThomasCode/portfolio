@@ -8,29 +8,30 @@ function Hello () {
             <TypeWriterEffect 
                 hideCursorAfterText='true'
                 startDelay={1000}
-                cursorColor="black"
+                cursorColor="white"
                 text="Hi there ! 👋"
-                typeSpeed={20}
+                typeSpeed={30}
             />
             <TypeWriterEffect
                 hideCursorAfterText='true'
                 startDelay={1500}
-                cursorColor="black"
+                cursorColor="white"
                 text="I'm Antoine Thomas"
-                typeSpeed={20}
+                typeSpeed={30}
             />
             <TypeWriterEffect
                 hideCursorAfterText='true'
-                startDelay={2300}
+                startDelay={2500}
                 cursorColor="white"
                 text="A Front End Developper,"
-                typeSpeed={20}
+                typeSpeed={30}
             />
             <TypeWriterEffect
-                startDelay={3000}
-                cursorColor="black"
+                startDelay={3800}
+                hideCursorAfterText='true'
+                cursorColor="white"
                 text="focused on React. "
-                typeSpeed={20}
+                typeSpeed={30}
             />
         </div>
     )

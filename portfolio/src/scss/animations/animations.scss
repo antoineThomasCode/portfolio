@@ -67,4 +67,11 @@
       width: 100%;
     }
   }
- 
+  @keyframes display-menu {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 150px;
+    }
+  }

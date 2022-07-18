@@ -3,6 +3,10 @@ footer {
     flex-basis: 100%;
     font-family: 'Open Sans', sans-serif;
     animation: slide-bottom 0.4s ease-in-out 0.2s both;
+    background-color: white;
+    margin-top: 20px;
+    height: 150px;
+
     > div {
         display: flex;
         flex-wrap: wrap;
@@ -12,13 +16,7 @@ footer {
         justify-content: space-between;
         align-items: center;
         font-weight: 400;
-        .nav-footer {
-            display: flex;
-            column-gap: 20px;
-            a {
-                text-decoration: none;
-                color: black;
-            }
+
         }
         .social-networks {
             display: flex;
@@ -26,11 +24,13 @@ footer {
             a { 
                 display: flex;
                 text-decoration: none;
-                color: black;
+                color: white;
+                font-weight: 600;
                 align-items: center;
                 border: solid 2px #04d28394;
                 padding: 10px;
                 border-radius: 10px;
+                background-color: #05DB91;
                 img, svg {
                     margin-left: 10px;
                     height: 30px;
@@ -43,9 +43,11 @@ footer {
             }
             .github-icon {
                 font-size: 3em;
+                color: black;
             }
             .linkdin-logo {
                 font-size: 2em;
+                color: #0e76a8;
             }
             .malt {
                 height: 30px;
@@ -53,6 +55,30 @@ footer {
         }
         .cities {
             display: flex;
+            font-weight: 800;
+            color: black;
+        }
+}
+@media screen and (max-width: 600px) {
+    footer {
+        margin-top: 20px;
+        > div {
+            justify-content: center;
+            .nav-footer {
+                display: none;
+            }
+            .social-networks {
+                a {
+                    font-size: 0.51em;
+                    padding: 0 5px;
+                }
+                .malt {
+                    height: 15px;
+                }
+            }
+            .cities {
+                font-size: 0.84em;
+            }
         }
     }
 }

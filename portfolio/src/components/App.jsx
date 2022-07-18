@@ -9,6 +9,8 @@ import Resume from "../pages/Resume";
 import Contact from "../pages/Contact";
 import Works from "../pages/Works";
 import NotFound from "../components/NotFound"
+import NoCodeAbout from "../pages/NoCodeAbout";
+import CodeAbout from "../pages/CodeAbout";
 
 function App() {
   
@@ -20,6 +22,8 @@ function App() {
           <Route path='/works' element={<Works />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/no-code-about" element={<NoCodeAbout />} />
+          <Route path="/code-about" element={<CodeAbout />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

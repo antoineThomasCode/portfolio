@@ -5,7 +5,7 @@
 .homepage {
     display: flex;
     flex-basis: 100%;
-    height: 65vh;
+    height: 68vh;
     font-family: 'Open Sans', sans-serif;
     justify-content: center;
     .profile {
@@ -17,16 +17,40 @@
         justify-content: center;
         align-items: center;
         max-width: 1200px;
-        margin: 20px auto 0 auto;
+        margin: 90px auto 0 auto;
         .profilePicture {
-            
-            > img {
+            position: relative;
+            > img:first-child {
+                position: absolute;
+                z-index: -1;
+                height: 450px;
+                left: -230px;
+                top: -10px;
+                animation: opacity-title 0.3s ease-in 0s both;
+            }
+            > img:nth-child(2) {
+                position: absolute;
+                z-index: -1;
+                height: 350px;
+                left: 380px;
+                top: -50px;
+                animation: slide-top 0.8s ease-in 1.2s both;
+            }
+            > img:nth-child(3) {
+                position: absolute;
+                z-index: -1;
+                height: 350px;
+                right: 350px;
+                top: 190px;
+                animation: slide-bottom 0.8s ease-in 1.2s both;
+            }
+            > img:nth-child(4) {
                 border: solid 4px #04d283e8;
-                height: 120px;
+                height: 190px;
                 border-radius: 50%;
-                width: 120px;
+                width: 190px;
                 object-fit: cover;
-                object-position: 10% 5%;
+                object-position: 5% 15%;
                 box-shadow: -1px 3px 17px 12px rgba(0,0,0,0.09);
                 animation: slide-bottom 0.3s ease-in 0.3s both;
             }
@@ -36,7 +60,30 @@
         display: flex;
         height:  150px;
         flex-basis: 100%;
-        margin-top: 50px;
+        margin-top: 70px;
     }
 
+}
+@media screen and (max-width: 600px) {
+   .homepage {
+    height: 65vh;
+    .question-modale-container {
+        margin-top: 35px;
+    }
+    .profile {
+        margin-top: 20px;
+        .profilePicture {
+            > img:first-child {
+                height: 360px;
+                left: -230px;
+            }
+            > img:nth-child(2) {
+                display: none;
+            }
+            > img:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+   }
 }

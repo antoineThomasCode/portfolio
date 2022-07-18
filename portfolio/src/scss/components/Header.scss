@@ -9,6 +9,10 @@ header {
     font-family: 'Open Sans', sans-serif;
     column-gap: 100px;
     animation: slide-top 0.4s ease-in-out 0.2s both;
+    padding: 0 20px;
+    .responsive-menu-container {
+        display: none;
+    }
     > a > img {
         height: 150px;
         object-fit: cover;
@@ -16,9 +20,11 @@ header {
     }
     nav {
         display: flex;
+        flex-wrap: wrap;
         flex-basis: 50%;
         column-gap: 20px;
         justify-content: space-between;
+        row-gap: 10px;
         a { 
             display: flex;
             align-items: center;
@@ -28,9 +34,23 @@ header {
             font-weight: 600;
             svg {
                 margin-right: 20px;
-                color: #04d28394;
+                color: #04d283e8;
                 font-size: 20px;
             }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    header {
+        .responsive-menu-container {
+            display: flex;
+        }
+        > a > img {
+            height: 150px;
+            
+        }
+        nav {
+            display: none;
         }
     }
 }

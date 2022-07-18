@@ -5,11 +5,14 @@ import logo from "../assets/images/logo-Antoine.gif"
 //style
 import '../scss/components/Header.scss' 
 
+import ResponsiveMenu from "./ResponsiveMenu";
+
 function Header () {
 
     return (
         <header>
             <Link to="/"><img src={logo} alt="logo Antoine Thomas" /></Link>
+            <ResponsiveMenu />
             <nav>
                 <Link to='/'><FaRegIdBadge /> About</Link>
                 <Link to='/works'><FaLayerGroup /> Works</Link>

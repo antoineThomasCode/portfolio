@@ -1,5 +1,6 @@
 .question-modale {
-    border: solid 3px #04d28394;
+    background-color: #f5f6feef;
+    border: solid 0px #04d28394;
     border-radius: 10px;
     color: white;
     max-width: 450px;
@@ -8,19 +9,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    box-shadow: -1px 3px 17px 12px rgba(110, 110, 110, 0.082);
+    box-shadow: -1px 3px 17px 12px rgba(121, 121, 121, 0.233);
     align-items: center;
     column-gap: 30px;
     .react-typewriter-text-wrap {
-        background-color: white;
+        background-color: transparent;
         display: flex;
         flex-wrap: wrap;
         flex-basis: 100%;
         justify-content: center;
         h1 {
-            color: black;
+            color: #0A175C;
             font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
+            font-weight: 800;
             font-size: 1.2em;
             flex-basis: 100%;
             text-align: center;
@@ -28,9 +29,9 @@
     }
     button {
         animation: slide-bottom 0.7s ease-in-out 2s both ;
-        color: #04d283e0;
+        color: #0A175C;
         cursor: pointer;
-        border: solid 3px #04d283e8 ;
+        border: solid 3px #0A175C ;
         background-color: white;
         padding: 10px;
         border-radius: 10px;
@@ -41,7 +42,16 @@
         &:hover {
             border: solid 3px white;
             color: white;
-            background-color: #04d283e3;
+            background-color: #0A175C;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .question-modale {
+        max-width: 300px;
+        .react-typewriter-text-wrap h1 {
+            font-size: 1em;
+            padding: 0 20px;
         }
     }
 }
