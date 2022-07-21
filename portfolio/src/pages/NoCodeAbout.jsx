@@ -1,10 +1,14 @@
 import React from "react";
+import NoCodeAboutContent from "../components/NoCodeAbout/NoCodeAbout";
+
+// style 
+import '../scss/components/NoCodeAbout.scss'
 
 function NoCodeAbout () {
     
     return (
-        <main>
-            <h1>Page de présentation No code </h1>
+        <main className="NoCodeAbout">
+            <NoCodeAboutContent />
         </main>
     )
 }
