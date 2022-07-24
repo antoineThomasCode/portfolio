@@ -11,7 +11,7 @@ function ResumeContact () {
                     <MdPhone />  06 32 68 52 93
                 </div>
                 <div>
-                    <MdMailOutline /> antoine thomas.devweb@gmail.com
+                    <MdMailOutline /> antoinethomas.devweb@gmail.com
                 </div>
             </div>
         </div>

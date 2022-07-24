@@ -19,11 +19,11 @@ function QuestionModale () {
                 hideCursorAfterText='true'
                 startDelay={600}
                 cursorColor="#0A175C"
-                text="Do you know the magic ?"
+                text="Are you a developer ?"
                 typeSpeed={20}
                  />
                  <button onClick={(e) => handleClickCode(e)}>Developer Version</button>
-                 <button onClick={(e) => handleClickNoCode(e)}>Moldus Version</button>
+                 <button onClick={(e) => handleClickNoCode(e)}>Normal Version</button>
         </div>
     )
 }

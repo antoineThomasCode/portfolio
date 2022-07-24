@@ -5,44 +5,44 @@ import "../../scss/components/PerfChart.scss"
 
 const data = [
   {
-    subject: 'Productivity',
-    A: 70,
+    subject: 'Vanilla Js',
+    A: 75,
     B: 100,
     fullMark: 100,
   },
   {
-    subject: 'Learning ability',
-    A: 85,
-    B: 100,
-    fullMark: 100,
-  },
-  {
-    subject: 'Problem solving',
+    subject: 'React js / Redux',
     A: 80,
     B: 100,
     fullMark: 100,
   },
   {
-    subject: 'Creativity',
-    A: 80,
-    B: 100,
-    fullMark: 100,
-  },
-  {
-    subject: 'Autonomy',
-    A: 80,
-    B: 100,
-    fullMark: 100,
-  },
-  {
-    subject: 'enthusiasm',
+    subject: 'HTML / CSS',
     A: 100,
+    B: 100,
+    fullMark: 100,
+  },
+  {
+    subject: 'Testing',
+    A: 60,
+    B: 100,
+    fullMark: 100,
+  },
+  {
+    subject: 'UX/UI',
+    A: 60,
+    B: 100,
+    fullMark: 100,
+  },
+  {
+    subject: 'Agile',
+    A: 60,
     B: 100,
     fullMark: 100,
   },
 ];
 
-function PerfChart () {
+function PerfChartCode () {
  
     return (
         <ResponsiveContainer width="100%" height="90%">
@@ -55,4 +55,4 @@ function PerfChart () {
         </ResponsiveContainer>
     )
   }
-  export default PerfChart
+  export default PerfChartCode

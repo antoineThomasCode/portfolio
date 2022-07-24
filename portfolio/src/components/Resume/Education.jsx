@@ -19,7 +19,8 @@ function Education () {
                    <img className="OC-logo" src={OpenClassrooms} alt="OpenClassrooms" /> OpenClassrooms
                 </p>
                 <p className="role">
-                    Front End developper - React specialty
+                    JavaScript React Developer <br />
+                    Bachelor's-level diploma (Bac +3/4)
                 </p>
             </div>
             <div className="degrees">

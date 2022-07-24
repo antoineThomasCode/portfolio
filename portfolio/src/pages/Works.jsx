@@ -1,10 +1,10 @@
 import React from "react";
-
+import WorksContent from "../components/works/WorksContent";
 
 function Works () {
     return (
         <main className="works">
-                <p> Je suis sur la page Works</p>
+            <WorksContent />
         </main>
     )
 }

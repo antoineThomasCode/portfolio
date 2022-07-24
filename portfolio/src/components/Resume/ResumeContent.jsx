@@ -22,7 +22,7 @@ function ResumeContent () {
     return (
         <div className="ResumeContent">
             <div className="Resume__profileImg">
-                <img src={imgProfile} alt="" />
+                <img src={imgProfile} alt="Antoine Thomas" />
             </div>
             <div className="Resume__technos">
                 <img src={sasslogo} alt="sass" />

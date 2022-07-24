@@ -1,17 +1,12 @@
-.NoCodeAbout__Content {
+.CodeAboutContent {
     display: flex;
-    flex-wrap: wrap;
     flex-basis: 100%;
-    font-family: 'Open Sans', sans-serif;
+    flex-wrap: wrap;
     padding: 0 20px;
-    animation: slide-top 0.4s ease-in-out 0.2s both;
-    .card-container {
-        display: flex;
+    .separator {
         flex-basis: 100%;
-        flex-wrap: wrap;
-        justify-content: space-between;
     }
-    .whatKind {
+    h1 {
         display: flex;
         font-size: 1.6em;
         margin: 30px auto;
@@ -24,8 +19,4 @@
         animation: slide-top 0.7s ease-in-out 0.4s both;
         box-shadow: -1px 3px 17px 12px rgba(121, 121, 121, 0.114);
     }
-    .separator {
-        flex-basis: 100%;
-    }
-
 }

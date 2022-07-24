@@ -1,0 +1,91 @@
+.army__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    .army__card {
+        box-shadow: -1px 3px 17px 12px rgba(121, 121, 121, 0.114);
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        border-radius: 20px;
+        margin: 30px auto;
+
+        .army__titleCard {
+            color: white;
+            background-color: #05DB91;
+            padding: 20px 30px;
+            position: absolute;
+            top: 60px;
+            left: 20px;
+            font-weight: 700;
+            opacity: 0.7;
+            border-radius: 5px;
+            font-size: 1.3em;
+        }
+        .army__illustration {
+            display: flex;
+            flex-basis: 100%;
+            object-fit: cover;
+            height: 200px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        .army__list-value-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 100%;
+            padding: 20px 0;
+            font-size: 0.75em;
+            row-gap: 10px;
+            justify-content: space-around;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0;
+                row-gap: 10px;
+                padding: 10px;
+                flex-direction: column;
+                li {
+                    display: flex;
+                    text-align: center ;
+                    list-style: none;
+                    font-weight: 400;
+                    svg {
+                        margin-right: 10px;
+                        font-size: 1.2em;
+                        color: #05DB91;
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media screen and (min-width: 1000px) {
+    .army__container {
+        flex-basis: 45%;
+        .army__card {
+           
+            position: relative;
+            bottom: 20px;
+            .army__titleCard {
+                left: 130px;
+                top: 150px;
+            }
+            .army__list-value-container {
+                ul {
+                    padding: 20px;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.4em;
+                    }
+                }
+            }
+            .army__illustration {
+                height: 330px;
+            }
+        }
+
+    }
+}

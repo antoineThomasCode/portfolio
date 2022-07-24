@@ -1,0 +1,36 @@
+.recharts-responsive-container {
+    height: 300px !important;
+    margin: 0 auto;
+    max-width: 500px;
+    margin-bottom: 30px;
+    .recharts-wrapper {
+        background-color: #f5f6feef;
+        border-radius: 10px;
+
+    }
+    .recharts-polar-radius-axis-ticks, .radiusAxis {
+        display: none;
+    }
+    .recharts-polar-grid{
+       display: none ; 
+    }
+    .angleAxis {
+        fill: #05db903b !important;
+    }
+    .recharts-polar-angle-axis-tick-value {
+        font-weight: 700;
+        font-size: 0.8em;
+        color: white !important;
+    }
+}
+@media screen and (max-width: 500px) {
+    .recharts-responsive-container {
+        height: 260px !important;
+        max-width: 3500px;
+        .recharts-polar-angle-axis-tick-value {
+            font-weight: 500;
+            font-size: 0.6em;
+        }
+    }
+    
+}

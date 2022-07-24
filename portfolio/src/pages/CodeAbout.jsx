@@ -1,10 +1,11 @@
 import React from "react";
+import CodeAboutContent from "../components/CodeAbout/CodeAboutContent";
 
 function CodeAbout () {
 
     return (
-        <main>
-            <h1>Page de présentation width code </h1>
+        <main className="codeAbout">
+            <CodeAboutContent />
         </main>
     )
 }
